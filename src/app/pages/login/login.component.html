@@ -1,0 +1,39 @@
+<div class="main-content">
+  <mat-card class="main-card example-card text-center">
+    <img mat-card-image src="https://www.refacil.co/wp-content/uploads/2022/01/277624024-298415179079555-7958136957985533902-n.gif" alt="Re facil logo">
+    <mat-card-content>
+      <h3>Welcome back!</h3>
+      <h4>Sign in with your credentials below</h4>
+
+      <form class="example-form" (ngSubmit)="onSubmit()">
+        <div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input formControlName="usr_email" type="text" matInput placeholder="jhondoe123">
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input formControlName="usr_password" type="password" matInput>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <br>
+          <mat-checkbox class="example-margin">Remember Me</mat-checkbox>
+        </div>
+
+        <button class="login-btn" mat-raised-button color="primary">Sign In</button>
+
+        <div>
+          <a href="javascript:;">... Or Forgot password?</a>
+        </div>
+      </form>
+
+
+    </mat-card-content>
+  </mat-card>
+</div>
+
